@@ -1,13 +1,11 @@
-<?xml version="1.0"?>
-<stylesheet version="1.0"
-	xmlns="http://www.w3.org/1999/XSL/Transform"
-	xmlns="http://www.w3.org/2005/Atom">
-	<output method="text"/>
-	<template match="/">
-		<!--<apply-templates select="/rss/channel/item/enclosure"/>-->
-		<apply-templates select="/entry/link"/>
-	</template>
-	<template match="link">
-		<value-of select="@href"/><text>&#10;</text>
-	</template>
-</stylesheet>
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions" xmlns:atom="http://www.w3.org/2005/Atom">
+    <xsl:output method="text" version="1.0" encoding="UTF-8" indent="yes"/>
+    <xsl:template match="/">
+        <output>
+        <xsl:for-each select="/atom:feed/atom:entry/atom:link">
+            <xsl:value-of select="@href"/>
+        </xsl:for-each>
+        </output>
+    </xsl:template>
+</xsl:stylesheet>
