@@ -30,11 +30,11 @@
 # with in order to force the user to review this USER CONFIGURATION section
 # and set the various options. Uncomment and set to desired path.
 # Mashpodder will not create this directory for you.
-#BASEDIR="$HOME/mashpodder"
+BASEDIR="$HOME/podcast"
 
 # RSSFILE: Location of mp.conf file.  Can be changed to another file name.
 # Default is "$BASEDIR/mp.conf".
-RSSFILE="$BASEDIR/mp.conf"
+RSSFILE="$BASEDIR/podcasts.conf"
 
 # PODCASTDIR: Location of podcast directories listed in $RSSFILE.  If you
 # have an escaped space in the directory name be sure to keep the double
@@ -42,7 +42,7 @@ RSSFILE="$BASEDIR/mp.conf"
 # reporting the issues that led to these directory changes.  Mashpodder will
 # create this directory if it does not exist unless $CREATE_PODCASTDIR is
 # set to "".
-PODCASTDIR="$BASEDIR/podcasts"
+PODCASTDIR="$BASEDIR/mp3"
 
 # CREATE_PODCASTDIR: Default "1" will create the directory for you if it
 # does not exist; "" means to fail and exit if $PODCASTDIR does not exist.
