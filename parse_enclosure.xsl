@@ -3,7 +3,7 @@
     <xsl:output method="text" version="1.0" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
         <output>
-        <xsl:for-each select="/atom:feed/atom:entry/atom:link">
+        <xsl:for-each select="/atom:feed/atom:entry/atom:link[@rel='enclosure']">
             <xsl:value-of select="@href"/>
         </xsl:for-each>
         </output>
