@@ -111,11 +111,11 @@ DAILY_PLAYLIST=""
 UPDATE=""
 
 # VERBOSE: Default "" is quiet output; "1" is verbose.
-VERBOSE=""
+VERBOSE="1"
 
 # WGET_QUIET: Default is "-q" for quiet wget output; change to "" for wget
 # output.
-WGET_QUIET="-q"
+WGET_QUIET=""
 
 # WGET_TIMEOUT: Default is 30 seconds; can decrease or increase if some
 # files are cut short. Thanks to Phil Smith for the bug report.
