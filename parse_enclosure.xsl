@@ -3,7 +3,8 @@
 	xmlns="http://www.w3.org/1999/XSL/Transform">
 	<output method="text"/>
 	<template match="/">
-		<apply-templates select="/rss/channel/item/enclosure"/>
+		<!--<apply-templates select="/rss/channel/item/enclosure"/>-->
+		<apply-templates select="/entry/link"/>
 	</template>
 	<template match="enclosure">
 		<value-of select="@url"/><text>&#10;</text>
