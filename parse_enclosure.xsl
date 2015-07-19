@@ -6,7 +6,7 @@
 		<!--<apply-templates select="/rss/channel/item/enclosure"/>-->
 		<apply-templates select="/entry/link"/>
 	</template>
-	<template match="enclosure">
-		<value-of select="@url"/><text>&#10;</text>
+	<template match="link">
+		<value-of select="@href"/><text>&#10;</text>
 	</template>
 </stylesheet>
