@@ -30,7 +30,7 @@
 # with in order to force the user to review this USER CONFIGURATION section
 # and set the various options. Uncomment and set to desired path.
 # Mashpodder will not create this directory for you.
-BASEDIR="$HOME/podcast"
+BASEDIR="$HOME/podcasts"
 
 # RSSFILE: Location of mp.conf file.  Can be changed to another file name.
 # Default is "$BASEDIR/mp.conf".
